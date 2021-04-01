@@ -1,452 +1,361 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
 
+<html lang="en">
 <head>
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>cv</title>
-
-
-<style type="text/css">
-
-html {
-  font-size: 100%;
-  overflow-y: scroll;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-body {
-  color: #444;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  line-height: 1.7;
-  padding: 1em;
-  margin: auto;
-  max-width: 42em;
-  background: #fefefe;
-}
-
-a {
-  color: #0645ad;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #0b0080;
-}
-
-a:hover {
-  color: #06e;
-}
-
-a:active {
-  color: #faa700;
-}
-
-a:focus {
-  outline: thin dotted;
-}
-
-*::-moz-selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: #000;
-}
-
-*::selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: #000;
-}
-
-a::-moz-selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: #0645ad;
-}
-
-a::selection {
-  background: rgba(255, 255, 0, 0.3);
-  color: #0645ad;
-}
-
-p {
-  margin: 1em 0;
-}
-
-img {
-  max-width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #111;
-  line-height: 125%;
-  margin-top: 2em;
-  font-weight: normal;
-}
-
-h4, h5, h6 {
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 2.5em;
-}
-
-h2 {
-  font-size: 2em;
-}
-
-h3 {
-  font-size: 1.5em;
-}
-
-h4 {
-  font-size: 1.2em;
-}
-
-h5 {
-  font-size: 1em;
-}
-
-h6 {
-  font-size: 0.9em;
-}
-
-blockquote {
-  color: #666666;
-  margin: 0;
-  padding-left: 3em;
-  border-left: 0.5em #EEE solid;
-}
-
-hr {
-  display: block;
-  height: 2px;
-  border: 0;
-  border-top: 1px solid #aaa;
-  border-bottom: 1px solid #eee;
-  margin: 1em 0;
-  padding: 0;
-}
-
-pre, code, kbd, samp {
-  color: #000;
-  font-family: monospace, monospace;
-  _font-family: 'courier new', monospace;
-  font-size: 0.98em;
-}
-
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-b, strong {
-  font-weight: bold;
-}
-
-dfn {
-  font-style: italic;
-}
-
-ins {
-  background: #ff9;
-  color: #000;
-  text-decoration: none;
-}
-
-.center{
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 100%;
-}
-
-@-webkit-keyframes shadow-drop-center {
-  0% {
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-  100% {
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-  }
-}
-@keyframes shadow-drop-center {
-  0% {
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-  100% {
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-  }
-}
-
-.shadow-drop-center {
-	-webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-
-
-mark {
-  background: #ff0;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-ul, ol {
-  margin: 1em 0;
-  padding: 0 0 0 2em;
-}
-
-li p:last-child {
-  margin-bottom: 0;
-}
-
-ul ul, ol ol {
-  margin: .3em 0;
-}
-
-dl {
-  margin-bottom: 1em;
-}
-
-dt {
-  font-weight: bold;
-  margin-bottom: .8em;
-}
-
-dd {
-  margin: 0 0 .8em 2em;
-}
-
-dd:last-child {
-  margin-bottom: 0;
-}
-
-img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-  vertical-align: middle;
-}
-
-figure {
-  display: block;
-  text-align: center;
-  margin: 1em 0;
-}
-
-figure img {
-  border: none;
-  margin: 0 auto;
-}
-
-figcaption {
-  font-size: 0.8em;
-  font-style: italic;
-  margin: 0 0 .8em;
-}
-
-table {
-  margin-bottom: 2em;
-  border-bottom: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  border-spacing: 0;
-  border-collapse: collapse;
-}
-
-table th {
-  padding: .2em 1em;
-  background-color: #eee;
-  border-top: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-}
-
-table td {
-  padding: .2em 1em;
-  border-top: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-  vertical-align: top;
-}
-
-.author {
-  font-size: 1.2em;
-  text-align: center;
-}
-
-@media only screen and (min-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-}
-@media print {
-  * {
-    background: transparent !important;
-    color: black !important;
-    filter: none !important;
-    -ms-filter: none !important;
-  }
-
-  body {
-    font-size: 12pt;
-    max-width: 100%;
-  }
-
-  a, a:visited {
-    text-decoration: underline;
-  }
-
-  hr {
-    height: 1px;
-    border: 0;
-    border-bottom: 1px solid black;
-  }
-
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
-    content: "";
-  }
-
-  pre, blockquote {
-    border: 1px solid #999;
-    padding-right: 1em;
-    page-break-inside: avoid;
-  }
-
-  tr, img {
-    page-break-inside: avoid;
-  }
-
-  img {
-    max-width: 100% !important;
-  }
-
-  @page :left {
-    margin: 15mm 20mm 15mm 10mm;
-}
-
-  @page :right {
-    margin: 15mm 10mm 15mm 20mm;
-}
-
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2, h3 {
-    page-break-after: avoid;
-  }
-}
-</style>
+  <meta charset="utf-8">
+
+  <title>Beth Blackwood | CV</title>
+  <meta name="description" content="Beth Blackwood is the Digital Curation and Scholarship Librarian at California State University, Channel Islands’">
+  <meta name="author" content="Beth Blackwood">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Digital Asset Management, Creative Commons, Library, Scholarly Communications, Data Literacy">
+  <link rel="stylesheet" href="style.css">
 
 
 </head>
 
 <body>
 
-<h1 id="toc_0">Elizabeth (Beth) Blackwood</h1>
-
-<p><a href="/"><strong>Home</strong></a>
-<a href="/cv"><strong>CV</strong></a> <a href="/projects"><strong>Projects</strong></a> <a href="/workshops"><strong>Workshops</strong></a></p>
-
-<h2 id="toc_1">Education</h2>
-
-<p><code>2010-2014</code>
-<strong>Duke University</strong><br>
-Bachelor of Arts in History, Minor in Art History | <em>Graduation with Distinction</em></p>
-
-<p><code>2015-2017</code>
-<strong>University of North Carolina at Chapel Hill</strong><br>
-Master of Science in Library Science | <em>Certificate in Digital Curation</em></p>
-
-<h2 id="toc_2">Professional Appointments</h2>
-
-<p><code>2019-Present</code> 
-<strong>California State University Channel Islands,</strong> Digital Archivist, Assistant Librarian<br>
-<code>2017-2019</code> <strong>Hillwood Estate, Museum &amp; Gardens,</strong> Digital Asset Manager<br>
-<code>2015-2017</code> <strong>North Carolina Digital Heritage Center,</strong> Graduate Research Assistant<br>
-<code>2016</code> <strong>Duke University Libraries, Data &amp; Visualization Services,</strong> Department Intern<br>
-<code>2013</code> <strong>Library of Congress, Geography &amp; Map Division,</strong> Junior Research Fellow<br>
-<code>2012-2014</code> <strong>John Hope Franklin Humanities Institute,</strong> Research Team Lead   </p>
-
-<h2 id="toc_3">Publications</h2>
-
-<ul>
-<li><p>Blackwood, Elizabeth; Joubert, Doug; Sobczak, James. 2019. <a href="https://github.com/DataCurationNetwork/data-primers/blob/master/STL%20Data%20Curation%20Primer/STL-data-curation-primer.md">STL Data Curation Primer</a>. Data Curation Network GitHub Repository.</p></li>
-<li><p>Blackwood, Elizabeth. Integrating Digital Stewardship into Academic Library Instruction. <em>Journal of Academic Librarianship</em> vo. 46 no. 1. ScienceDirect,https://doi.org/10.1016/j.acalib.2019.102099&quot;&gt;https://doi.org/10.1016/j.acalib.2019.102099<br>
-<a href="JAL-Blackwood-202001.pdf">(Link)</a></p></li>
-</ul>
-
-<h2 id="toc_4">Presentations</h2>
-
-<ul>
-<li><strong>&quot;From Folders to Facets: Improving the Digital Asset Management System User Experience for Creative Types&quot;</strong><br>
-Musuem Computer Network Annual Conference, Denver, CO, November 15, 2018</li>
-<li><strong>&quot;Fostering an Institutional Awareness for Copyright and Licensing&quot;</strong>
-<a href="https://bpexchange.wordpress.com/2019-conference/2019-schedule/">Best Practices Exchange</a>, Columbus, OH, April 29, 2019</li>
-<li><strong>&quot;DAM Careers Forum: Paths in, Across and Upward&quot; (Panel Discussion)</strong>
-Henry Stewart Digital Asset Management Conference, November 7, 2019</li>
-</ul>
-
-<h2 id="toc_5">Grants</h2>
-
-<p><strong>Funding totals to present: $17,990</strong><br>
-<code>2020</code> California State University Channel Islands Faculty Research and Development Mini Grant<br>
-<code>2019</code> Amazon Web Services Research Computing Credits Grant, California State University system  </p>
-
-<h2 id="toc_6">Media and Blogs</h2>
-
-<ul>
-<li>Blackwood, Elizabeth. Professional Networks: The Alumni Association for DAM. <em>LinkedIn.</em> September 30, 2019. <a href= "https://www.linkedin.com/pulse/professional-networks-alumni-association-dam-elizabeth-blackwood/"><a href="https://www.linkedin.com/pulse/professional-networks-alumni-association-dam-elizabeth-blackwood/%3C/a">https://www.linkedin.com/pulse/professional-networks-alumni-association-dam-elizabeth-blackwood/&lt;/a</a></li>
-</ul>
-
-<h2 id="toc_7">For-Credit Courses</h2>
-
-<p><strong>California State University Channel Islands</strong><br>
-LIB 211: Discerning Information in an Interconnected World (Data and Algorithmic Literacy)</p>
-
-<h2 id="toc_8">University Service</h2>
-
-<p><code>2019-Present</code> <strong>Faculty Affairs Committee</strong><br>
-<code>2019-Present</code> <strong>Scholarly Communications Committee,</strong> California State University system-wide<br>
-<code>2019-Present</code> <strong>Digital Archives Working Group,</strong> California State University system-wide   </p>
-
-<h2 id="toc_9">Community Service</h2>
-
-<p><code>2016-2017</code> Justice &amp; Advocacy Committee Member, North Carolina Synod of the Evangelical Lutheran Church of America<br>
-<code>2014-2015</code> Young Adult Volunteer (YAGM), Evangelical Lutheran Church of America</p>
-
-
-
-
+<h1>Elizabeth (Beth) Blackwood</h1>
+<p><a href="/"><strong>Home</strong></a> <a href="cv"><strong>CV</strong></a> <a href="http://elizabethblackwood.cikeys.com/workshops"><strong>Workshops</strong></a></p>
+<h2>Professional Appointments</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align:right; width:10em;"><span>July 2019-Present</span></td>
+<td style="text-align: left;"><strong>Digital Curation and Scholarship Librarian</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;">California State University Channel Islands, Camarillo, CA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><span> Served as campus liaison for scholarly communication and administrated the campus institutional repository; designed outreach programming and workshops to educate faculty on open access issues; managed campus digital archives infrastructure, implementing AWS solutions and ArchivesSpace; administered the campus Open Journals system; advised and assisted on campus-wide projects and departments in research data management, storage, and preservation; performed high quality instruction sessions for information literacy, data management, and data privacy; performed regular reference duties; mentored students and interns. </span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span class="smallcaps">Mar. 2017-June 2019</span></td>
+<td style="text-align: left;"><strong>Digital Assets Librarian</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Hillwood Estate, Museum and Gardens, Washington D.C.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><span> Served as administrator for digital collections and related systems; developed and managed digital preservation activities; created and oversaw workflows for metadata best practices; researched, selected, and implemented a new digital asset management system and migrated existing data; produced and updated technical documentation; trained and onboarded all users; managed all internal and external rights, reproductions, and permissions; served as liaison to all museum departments; provided reference, consultation, and help-desk services; supervised interns and volunteers. </span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span class="smallcaps">Aug. 2015-Mar. 2017</span></td>
+<td style="text-align: left;"><strong>Graduate Research Assistant</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;">North Carolina Digital Heritage Center, Chapel Hill, NC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><span> Supported a statewide DPLA service hub, collaborating with regional partners; managed both physical and digital archival materials throughout their life cycles; applied metadata and technology standards based on best practices; mastered use of library technologies, including scanning hardware and software, and various design programs and the file formats they produce. </span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="smallcaps">May 2016-Dec. 2016</span></td>
+<td style="text-align: left;"><strong>Department Intern</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Duke University Libraries, Data and Visualization Services, Durham, NC</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><span> Supported the department in developing tools and training guides for data initiatives; provided reference and instruction services for data-specific needs, including data storage, data management, data curation, GIS software, and visualization tools; collected and analyzed tools for instruction in programming languages and applications. </span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="smallcaps">May 2013-Aug. 2013</span></td>
+<td style="text-align: left;"><strong>Junior Research Fellow</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Library of Congress, Geography and Maps Division, Washington, D.C.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><span> Created and implemented digital projects and educational tools using ArcGIS and archival materials; organized and presented digital content; designed and led outreach programs, including tours and congressional visits. </span></td>
+</tr>
+</tbody>
+</table>
+<h2>Education</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;width:10em;"><span class="smallcaps">May</span> 2017</td>
+<td style="text-align: left;"><strong>University of North Carolina at Chapel Hill</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Master of Science in Library Science | <em>Certificate in Digital Curation</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Thesis: “Mapping the Modern Data Librarian: Maintaining</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Competence in a Changing Digital Research Landscape" | Advisor: Rebecca Vargha</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="smallcaps">May</span> 2014</td>
+<td style="text-align: left;"><strong>Duke University</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Bachelor of Arts in History, Minor in Art History</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><em>Graduation with Distinction</em></td>
+</tr>
+</tbody>
+</table>
+<h2>Relevant Skills</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">DATA</td>
+<td style="text-align: left;">Python, R, ArcGIS, Tableau, MySQL, OpenRefine</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">WEB</td>
+<td style="text-align: left;">HTML, CSS, Javscript</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">CONTENT</td>
+<td style="text-align: left;">ArchivesSpace, CONTENTdm, TMS, SpringShare, Samvera, NetX, Drupal, Preservica</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">DESIGN</td>
+<td style="text-align: left;">Adobe Suite, SketchUp, <span>LaTeX</span></td>
+</tr>
+</tbody>
+</table>
+<h2>Scholarship</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="smallcaps">Articles</span></td>
+<td style="text-align: left;">Blackwood, E., Juarez, D. Virtual Internships: A COVID Side Effect that Libraries Should Keep. <em>portal,</em> Forthcoming spring 2022</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"> <span class="smallcaps">Blogs</span></td>
+<td style="text-align: left;">Blackwood, E. Professional Networks: The Alumni Association for DAM. <a href="https://www.linkedin.com/pulse/professional-networks-alumni-association-dam-elizabeth-blackwood/&lt;/a">LinkedIn</a>. September 30, 2019.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"> <span class="smallcaps">Chapters</span></td>
+<td style="text-align: left;">Blackwood, E., Hoffmann, D. "More Data, Less Dewey: Modernizing a For-Credit, Library Course to Support Data and Algorithmic Literacy for Undergrads"; in <em>Teaching Critical Thinking with Numbers Data Literacy and the Framework for Information Literacy for Higher Education</em>, American Library Association, Chicago; forthcoming 2021.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"> <span class="smallcaps">Columns</span></td>
+<td style="text-align: left;">Blackwood, E. (2020) Integrating digital stewardship into library instruction: An argument for student (and librarian) success. <em>Journal of Academic Librarianship</em>; 46(1). <a href="http://hdl.handle.net/20.500.12680/gx41mj565">hdl.handle.net/20.500.12680</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Blackwood, E. (2020) Fostering Institutional Awareness for Copyright: Some Practical Strategies. <em>Journal of Academic Librarianship</em>; 46(5). <a href="http://hdl.handle.net/20.500.12680/tt44ps468">hdl.handle.net/20.500.12680/tt44ps468</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span class="smallcaps">Presentations</span></td>
+<td style="text-align: left;">"Outside the R1: Equitable Data Management at the Undergraduate Level," Paper Presentation, International Association for Social Science Information Services and Technology 2021 Annual Conference; Scheduled: May 17, 2021</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><span><a href="https://youtu.be/nw_Tk62-6mc">"Primerpalooza Webinar"</a>, presented by the Data Curation Network and the International Association for Social Science Information Services and Technology, April 29, 2020</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;">"DAM Careers Forum: Paths in, Across and Upward" (Panel Discussion) Henry Stewart Digital Asset Management Conference, November 7, 2019</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;">"Fostering an Institutional Awareness for Copyright and Licensing" <a href="https://bpexchange.wordpress.com/2019-conference/2019-schedule/">Best Practices Exchange</a>, Columbus, OH, April 29, 2019</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;">"From Folders to Facets: Improving the Digital Asset Management System User Experience for Creative Types" <a href="https://mcn.edu/conferences/past-conferences/">Musuem Computer Network Annual Conference</a>, Denver, CO, November 15, 2018</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span class="smallcaps">Primers</span></td>
+<td style="text-align: left;">Blackwood, E; Joubert, D; Sobczak, J. (2020). STL Data Curation Primer. Data Curation Network. <a href="https://hdl.handle.net/11299/211352">https://hdl.handle.net/11299/211352</a>.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Grants</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="smallcaps">2020</span></td>
+<td style="text-align: left;">California State University Channel Islands Faculty Research and Development Mini Grant, $7990</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span class="smallcaps">2019</span></td>
+<td style="text-align: left;">Amazon Web Services Research Computing Grant, $10,000</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Courses Taught</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="smallcaps">LIB COMM 211</span></td>
+<td style="text-align: left;"><strong>Data Literacy</strong> | <a href="https://docs.google.com/document/d/1Vjjl1IeCBEt7Ul4IiHe3B3nfNKuz4sUREO8X8fZREfA/edit?usp=sharing">Example Syllabus</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Service Experience</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;width:10em;"><span>March 2020-Present</span></td>
+<td style="text-align: left;"><strong>Technology Volunteer</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="http://catawbacountycapc.org/capc/">Children’s Advocacy and Protection Center of Catawba County</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Newton, NC</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><span>Provided instruction and assistance in digital tools and applications, such as Zoom, Adobe Acrobat, and various social media platforms, during the COVID-19 global pandemic.</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span>March 2020-May 2020</span></td>
+<td style="text-align: left;"><strong>Volunteer</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><a href="https://www.ifixit.com/Wiki/Medical_Device_Page_Project_Guidelines#Section_Background">Medical Device Page Project, ifixit.com</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><span>Organized a medical device repair manuals for inclusion in an open access repository for medical professionals during the COVID-19 global pandemic. </span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span>Jan. 2016-May 2017</span></td>
+<td style="text-align: left;"><strong>Committee Member</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Justice and Advocacy Committee- North Carolina Synod</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Evangelical Lutheran Church of America, Salisbury, NC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><span>Designed a statewide survey; analyzed and presented data from the survey; organized and disseminated information to statewide networks; managed social media and marketing for the committee’s community activities. </span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span>Aug. 2014-Aug. 2015</span></td>
+<td style="text-align: left;"><strong>Young Adult Volunteer</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Evangelical Lutheran Church of America, Szarvas, Hungary</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"><span>Developed and taught ESL and art history classes for grades 1-12; tutored advanced students for English fluency exams; stewarded complex relationships between American, Hungarian, and Roma churches.</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
 </body>
-
 </html>

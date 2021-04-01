@@ -1,0 +1,222 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge ELIZABETH BLACKWOOD
+	}\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\begin{center}
+    \textsc{}Camarillo, CA | \href{http://bethblackwood.com/}{bethblackwood.com}\\ 
+    &\\
+    &\\
+\end{center}
+
+%Section: Professional Appointments
+\section{Professional Appointments}
+
+\begin{tabular}{r|p{11cm}}
+ {July 2019- Present} & \textbf{Digital Curation and Scholarship Librarian}\\
+ &California State University Channel Islands, Camarillo, CA \\
+ &\footnotesize{
+Served as campus liaison for scholarly communication and administrated the campus institutional repository; designed outreach programming and workshops to educate faculty on open access issues; managed campus digital archives infrastructure, implementing AWS solutions and ArchivesSpace; administered the campus Open Journals system; advised and assisted on campus-wide projects and departments in research data management, storage, and preservation; performed high quality instruction sessions for information literacy, data management, and data privacy; performed regular reference duties; mentored students and interns.
+ }\\\multicolumn{2}{c}{} \\
+ 
+ \textsc {Mar. 2017- June 2019} & \textbf{Digital Assets Librarian}\\
+ &Hillwood Estate, Museum and Gardens, Washington D.C. \\
+ &\footnotesize{
+ Served as administrator for digital collections and related systems;  developed and managed digital preservation activities; created and oversaw workflows for metadata best practices; researched, selected, and implemented a new digital asset management system and migrated existing data; produced and updated technical documentation; trained and onboarded all users; managed all internal and external rights, reproductions, and permissions; served as liaison to all museum departments; provided reference, consultation, and help-desk services; supervised interns and volunteers.
+ }\\\multicolumn{2}{c}{} \\
+ 
+ \textsc{Aug. 2015- Mar. 2017} & \textbf{Graduate Research Assistant}\\
+&North Carolina Digital Heritage Center, Chapel Hill, NC\\
+&\footnotesize{
+Supported a statewide DPLA service hub, collaborating with regional partners; managed both physical and digital archival materials throughout their life cycles; applied metadata and technology standards based on best practices; mastered use of library technologies, including scanning hardware and software, and various design programs and the file formats they produce.
+} \multicolumn{2}{c}{} \\
+ 
+ \textsc{May 2016 -Dec. 2016} 
+ & \textbf{Department Intern}\\
+ &Duke University Libraries, Data and Visualization Services, Durham, NC \\
+ &\footnotesize{
+ Supported the department in developing tools and training guides for data initiatives; provided reference and instruction services for data-specific needs, including data storage, data management, data curation, GIS software, and visualization tools; collected and analyzed tools for instruction in programming languages and applications.
+ }\\\multicolumn{2}{c}{} \\
+
+
+\textsc{May 2013-  Aug. 2013} 
+& \textbf{Junior Research Fellow}\\
+&Library of Congress, Geography and Maps Division, Washington, D.C.\\
+&\footnotesize{
+Created and implemented digital projects and educational tools using ArcGIS and archival materials; organized and presented digital content; designed and led outreach programs, including tours and congressional visits.
+}
+\multicolumn{2}{c}{} \\
+\end{tabular}
+%Section: Education
+
+\section{Education}
+\begin{tabular}{rl}	
+ \textsc{May} 2017 & \textbf{University of North Carolina at Chapel Hill}\\
+ & Master of Science in Library Science | \textit{Certificate in Digital Curation}\\
+& Thesis: ``Mapping the Modern Data Librarian: Maintaining \\
+& Competence in a Changing Digital Research Landscape" | \small Advisor: Rebecca Vargha\\
+\\
+\textsc{May} 2014& \textbf{Duke University}\\
+&Bachelor of Arts in History, Minor in Art History\\
+& \textit{Graduation with Distinction}
+
+\end{tabular}
+%Section: Relevant Skills
+\section{Relevant Skills}
+\begin{tabular}{rl}
+ DATA & Python, R, ArcGIS, Tableau, MySQL, OpenRefine\\
+ WEB & HTML, CSS, Javscript\\
+ CONTENT &ArchivesSpace, CONTENTdm, TMS, SpringShare, Samvera, NetX, Drupal, Preservica\\
+ DESIGN & Adobe Suite, SketchUp, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}
+\end{tabular}
+\\
+%Section: Scholarship
+\section{Scholarship}
+\begin{tabular}{r|p{11cm}}
+ \textsc{Articles}
+ & Blackwood, E., Juarez, D. Virtual Internships: A COVID Side Effect that Libraries Should Keep. \emph{portal,} Forthcoming spring 2022\\\multicolumn{2}{c}{} \\\
+  \textsc{Blogs}
+ & Blackwood, E. Professional Networks: The Alumni Association for DAM. \href{https://www.linkedin.com/pulse/professional-networks-alumni-association-dam-elizabeth-blackwood/</a}{LinkedIn}. September 30, 2019.\\\multicolumn{2}{c}{} \\\
+ \textsc{Chapters}
+ & Blackwood, E., Hoffmann, D. "More Data, Less Dewey: Modernizing a For-Credit, Library Course to Support Data and Algorithmic Literacy for Undergrads"; in \emph{Teaching Critical Thinking with Numbers Data Literacy and the Framework for Information Literacy for Higher Education}, American Library Association, Chicago; forthcoming 2021.\\\multicolumn{2}{c}{} \\\
+ \textsc{Columns}
+ & Blackwood, E. (2020) Integrating digital stewardship into library instruction: An argument for
+student (and librarian) success. \emph{Journal of Academic Librarianship}; 46(1).
+\href{http://hdl.handle.net/20.500.12680/gx41mj565}{hdl.handle.net/20.500.12680}
+\\&\\
+ & Blackwood, E. (2020) Fostering Institutional Awareness for Copyright: Some Practical Strategies. \emph{Journal of Academic Librarianship}; 46(5).
+\href{http://hdl.handle.net/20.500.12680/tt44ps468}{hdl.handle.net/20.500.12680/tt44ps468}\\\multicolumn{2}{c}{} \\
+
+\textsc{Presentations}
+ & "Outside the R1: Equitable Data Management at the Undergraduate Level," Paper Presentation, International Association for Social Science Information Services and Technology 2021 Annual Conference; Scheduled: May 17, 2021
+\\&\\
+ & {\href{https://youtu.be/nw_Tk62-6mc}{"Primerpalooza Webinar"}, presented by the Data Curation Network and the International Association for Social Science Information Services and Technology, April 29, 2020}
+\\&\\
+  & "DAM Careers Forum: Paths in, Across and Upward" (Panel Discussion) Henry Stewart Digital Asset Management Conference, November 7, 2019
+\\&\\
+ & "Fostering an Institutional Awareness for Copyright and Licensing" \href{https://bpexchange.wordpress.com/2019-conference/2019-schedule/}{Best Practices Exchange}, Columbus, OH, April 29, 2019
+\\&\\
+ & "From Folders to Facets: Improving the Digital Asset Management System User Experience for Creative Types" \href{https://mcn.edu/conferences/past-conferences/}{Musuem Computer Network Annual Conference}, Denver, CO, November 15, 2018\\\multicolumn{2}{c}{} \\
+ 
+ \textsc{Primers}
+ &Blackwood, E; Joubert, D; Sobczak, J. (2020). STL Data Curation Primer. Data Curation Network. \href{https://hdl.handle.net/11299/211352}{https://hdl.handle.net/11299/211352}.\\\multicolumn{2}{c}{} \\
+ 
+\end{tabular}
+%Section: Grants
+\section{Grants}
+\begin{tabular}{r|p{11cm}}
+ \textsc{2020}
+& California State University Channel Islands Faculty Research and Development Mini Grant, \$7990
+\\&\\
+ \textsc{2019}
+& Amazon Web Services Research Computing Grant, \$10,000
+\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+%Section: Courses Taught
+\section{Courses Taught}\\
+\begin{tabular}{r|p{11cm}}
+\textsc{LIB COMM 211} & \textbf{Data Literacy} | \href{https://docs.google.com/document/d/1Vjjl1IeCBEt7Ul4IiHe3B3nfNKuz4sUREO8X8fZREfA/edit?usp=sharing}{Example Syllabus}
+\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+%Section: Service Experience
+\section{Service Experience}
+
+\begin{tabular}{r|p{11cm}}
+ {March 2020 - Present} & \textbf{Technology Volunteer}\\
+ & \href{http://catawbacountycapc.org/capc/}{Children's Advocacy and Protection Center of Catawba County} \\
+ &Newton, NC \\
+ &\footnotesize{Provided instruction and assistance in digital tools and applications, such as Zoom, Adobe Acrobat, and various social media platforms, during the COVID-19 global pandemic.}\\\multicolumn{2}{c}{} \\
+ 
+  {March 2020 - May 2020} & \textbf{Volunteer}\\
+ & \href{https://www.ifixit.com/Wiki/Medical_Device_Page_Project_Guidelines#Section_Background}{Medical Device Page Project, ifixit.com}\\
+ &\footnotesize{Organized a medical device repair manuals  for inclusion in an open access repository for medical professionals during the COVID-19 global pandemic. }\\\multicolumn{2}{c}{} \\
+ 
+ {Jan. 2016 - May 2017} & \textbf{Committee Member}\\
+ &Justice and Advocacy Committee- North Carolina Synod \\
+ &Evangelical Lutheran Church of America, Salisbury, NC \\
+ &\footnotesize{Designed a statewide survey; analyzed and presented data from the survey; organized and disseminated information to statewide networks; managed social media and marketing for the committee's community activities. }\\\multicolumn{2}{c}{} \\
+ 
+ {Aug. 2014 - Aug. 2015} & \textbf{Young Adult Volunteer}\\
+ &Evangelical Lutheran Church of America, Szarvas, Hungary \\
+ &\footnotesize{Developed and taught ESL and art history classes for grades 1-12; tutored advanced students for English fluency exams; stewarded complex relationships between American, Hungarian, and Roma churches.}\\\multicolumn{2}{c}{} \\
+
+ \end{tabular}
+%\newpage
+%\hypertarget{gmat}{\textsc{Gmat}\setmainfont{LMRoman10 Regular}\textregistered\setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}}
+
+%\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
+
+\end{document}
